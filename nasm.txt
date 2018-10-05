@@ -1,0 +1,1 @@
+nasm -f bin x64_code_VQEX.asm -o raw.bin

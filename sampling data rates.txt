@@ -1,0 +1,23 @@
+create periodic sampler to get the data rate
+ex of a sample every second, with 8 samples:
+10
+5
+3
+10
+10
+10
+5
+9
+which makes the data rate: (10+5+3+10+10+10+5+9)/8 = 7.75
+
+then when you push a new value, ex 8, you remove the first value from the list(which in this case the value is 10).
+so the new table becomes:
+5
+3
+10
+10
+10
+5
+9
+8
+which makes the data rate: (5+3+10+10+10+5+9+8)/8 = 7.50
